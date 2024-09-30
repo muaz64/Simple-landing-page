@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <main>
+        <header>
+
+            <div class="box-logo">
+                <div class="first"></div>
+                <div class="middle">
+
+                    <img src="main-logo.png" alt="logo">
+
+                </div>
+                <div class="last"></div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="top-part"></div>
+            <div class="bottom-part">
+                <div class="form-info">
+                    <form action="/">
+                        <label class="form-title">Please enter your information to receive this free course</label>
+                        <div class="inputs">
+                            <div>
+                                <label for="user-info">FullName</label><i class="fa fa-star"></i>
+                            </div>
+                            <input type="text" placeholder="Enter your fullname" id="user-info" class="style-input"
+                                oninput="FullNameValidation()">
+                            <span id="Check-fullname"></span>
+                        </div>
+
+                        <div class="inputs">
+                            <div>
+                                <label for="user-email">Email</label><i class="fa fa-star"></i>
+                            </div>
+                            <input type="text" placeholder="Enter your EmailAddress" id="user-email" class="style-input"
+                                oninput="EmailValidation()">
+                            <span id="Check-email"></span>
+                        </div>
+
+
+                        <div class="inputs">
+                            <div>
+                                <label for="user-phone">PhoneNumber</label><i class="fa fa-star"></i>
+                            </div>
+                            <input type="text" placeholder="123 456 7890" id="user-phone" class="style-input"
+                                oninput="PhoneValidation()">
+                            <span id="Check-phonenumber"></span>
+                        </div>
+                        <button type="button" onclick="return validateForm()">Get Started Now</button>
+                        <span id="Check-submit" class="span-submit"></span>
+                    </form>
+
+                </div>
+                <div class="main-text">
+                    <h1>We can help you</h1>
+                    <h3>You can live the life you deserve</h3>
+                    <p>We can help you learn how to use your ability and skills to earn money and be the best in your
+                        life</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
